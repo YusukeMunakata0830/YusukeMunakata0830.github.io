@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Dangerous Blog
+description: A dangerous site deserves a dangerous blog.
 ---
 
 <div class="page blog-index">
@@ -23,7 +25,9 @@ layout: default
           <h2><a href="{{post.url}}">I am the title of an article</a></h2>
           <div class="post-byline">
             <img src="{{post.gravatar}}">
-            <a href="{{post.authorTwitter}}" class="social-link">Tw</a>
+            <a href="{{post.authorTwitter}}" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
             by: {{post.author}}
             <span> -{{post.date | date: '%B %d, %Y'}}</span>
           </div>
